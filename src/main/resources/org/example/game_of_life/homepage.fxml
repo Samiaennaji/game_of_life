@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.game_of_life.GameOfLifeController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Grid -->
+    <GridPane fx:id="gridPane" gridLinesVisible="true"/>
+
+    <!-- Controls -->
+    <Button text="Start" onAction="#onStartButtonClick"/>
+    <Button text="Pause" onAction="#onPauseButtonClick"/>
+</VBox>
